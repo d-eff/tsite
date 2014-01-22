@@ -131,7 +131,6 @@ body {
   font-family: 'aller_lightregular', arial, sans-serif;
   background-color: #eff1ef;
   font-size: 16px;
-  background: url("../imgs/bg_hept.png") -45px -45px #eff1ef no-repeat fixed;
   color:#4c4c4c;
 }
 
@@ -139,15 +138,26 @@ a {
   text-decoration:none;
 }
 
+#page-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+#white-heptagon {
+  position: fixed;
+  z-index: 0;
+  margin: -45px -45px;
+}
+
 header {
   position:fixed;
-  min-width:100%
+  left:0px;
+  right:0px;
+  z-index:10;
 }
 
 #header-wrapper {
   height: 50px;
-  z-index: 10;
-  overflow: visible;
   background-color:#ffffff;
   max-width:1440px;
   margin: 0 auto;
@@ -166,7 +176,7 @@ header {
 
 #header-title {
   font-size:2rem;
-  font-family: 'allerbold', serif, arial, sans-serif;
+  font-family: 'allerbold', arial, sans-serif;
   float:left;
   padding: 5px 24px;
 }
@@ -184,6 +194,9 @@ header {
 
 #content-wrapper {
   padding-top:150px;
+  margin: 0 auto;
+  position: relative;
+  z-index:2;
 }
 
 .feature-block{
