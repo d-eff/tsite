@@ -1,0 +1,244 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, 
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* End Resets */
+
+@font-face {
+  font-family: 'aller_lightregular';
+  src: url('../fonts/aller_lt-webfont.eot');
+  src: url('../fonts/aller_lt-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/aller_lt-webfont.woff') format('woff'),
+        url('../fonts/aller_lt-webfont.ttf') format('truetype'),
+        url('../fonts/aller_lt-webfont.svg#aller_lightregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'allerbold';
+  src: url('../fonts/aller_bd-webfont.eot');
+  src: url('../fonts/aller_bd-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/aller_bd-webfont.woff') format('woff'),
+  url('../fonts/aller_bd-webfont.ttf') format('truetype'),
+  url('../fonts/aller_bd-webfont.svg#allerbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'tsymbols';
+	src: url('../fonts/tsymbols.eot');
+	src: url('../fonts/tsymbols.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/tsymbols.woff') format('woff'),
+		 url('../fonts/tsymbols.svg') format('svg'),
+		 url('../fonts/tsymbols.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon-hept_etsy, .icon-hept_instagram, .icon-hept_lamb, .icon-hept_linkedin, .icon-hept_tumblr, .icon-hept_twitter, .icon-arrow-right, .icon-arrow-left, .icon-eye{
+	font-family: 'tsymbols';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-hept_etsy:before {
+	content: "\e001";
+	color:#f26522;
+}
+.icon-hept_instagram:before {
+	content: "\e002";
+	color:#c69c6d;
+}
+.icon-hept_lamb:before {
+	content: "\e003";
+	font-size:160px;
+}
+.icon-hept_linkedin:before {
+	content: "\e004";
+	color:#007bb6;
+}
+.icon-hept_tumblr:before {
+	content: "\e005";
+	color:#2a445e;
+}
+.icon-hept_twitter:before {
+	content: "\e006";
+	color:#33b9b5;
+}
+.icon-arrow-right:before {
+	content: "\e00f";
+}
+.icon-arrow-left:before {
+	content: "\e000";
+}
+.icon-eye:before {
+	content:"\e00a";
+	font-size:72px;
+}
+
+/* ----------END FONTS----------*/
+
+body {
+  font-family: 'aller_lightregular', arial, sans-serif;
+  background-color: #eff1ef;
+  font-size: 16px;
+  background: url("../imgs/bg_hept.png") -45px -45px #eff1ef no-repeat fixed;
+  color:#4c4c4c;
+}
+
+a {
+  text-decoration:none;
+}
+
+header {
+  position:fixed;
+  min-width:100%
+}
+
+#header-wrapper {
+  height: 50px;
+  z-index: 10;
+  overflow: visible;
+  background-color:#ffffff;
+  max-width:1440px;
+  margin: 0 auto;
+}
+
+#header-logo {
+  margin-left:-19px;
+  float:left;
+  width:150px;
+}
+
+#header-icon {
+  float: left;
+  margin: 35px 0px 0px -25px; 
+}
+
+#header-title {
+  font-size:2rem;
+  font-family: 'allerbold', serif, arial, sans-serif;
+  float:left;
+  padding: 5px 24px;
+}
+
+#header-nav-list {
+  float:right;
+  padding-right:7px;
+}
+
+.header-nav-item {
+  float:left; 
+  font-size:1.5rem;
+  padding: 15px 10px 0px 10px;
+}
+
+#content-wrapper {
+  padding-top:150px;
+}
+
+.feature-block{
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0px 0px 80px 0px;
+}
+
+.feature-image{
+  width: 100%;
+}
+
+.feature-title {
+  font-size: 1.875em;
+  padding: 24px 0px 0px 20px;
+}
+
+.feature-description {
+  font-size: 1.125rem; 
+  padding: 5px 20px 0px 20px;
+  line-height: 1.3;
+}
+
+footer {
+  max-width:1440px;
+  margin: 20px auto 0px auto;
+}
+#footer-email {
+  float:left;
+  font-size:24px;
+  padding: 25px 0px 30px 16px;
+}
+
+#footer-icon-list {
+  float:right;
+  font-size:48px;
+  padding: 0px 10px 30px 0px;
+}
+
+.footer-icon {
+  float:left;
+  padding:0px 7px;
+}
+
+@media (max-width: 700px) {
+  #footer-email {
+    display:none;
+  }
+  #footer-icon-list{
+    float:none;
+    width:320px;
+    margin:0 auto;
+    font-size:4rem;
+  }
+}
+
+
+
