@@ -270,7 +270,7 @@ footer {
   #header-title {
     font-size: 1.5rem;
     padding: 7px 0px;
-    margin-left: 14px;
+    margin-left: -14px;
   } 
   #content-wrapper {
     padding-top: 110px;
