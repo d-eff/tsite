@@ -241,6 +241,12 @@ footer {
   padding:0px 7px;
 }
 
+@media screen and (max-width: 800px){
+  #header-nav-list {
+    display:none;
+  } 
+}
+
 @media (max-width: 700px) {
   #footer-email {
     display:none;
@@ -253,5 +259,31 @@ footer {
   }
 }
 
+@media screen and (max-width: 640px){
+  
+  #header-wrapper {
+    height: 45px;
+  }
+  #header-logo {
+    width: 100px;
+  }
+  #header-title {
+    font-size: 1.5rem;
+    padding: 7px 0px;
+    margin-left: 14px;
+  } 
+  #content-wrapper {
+    padding-top: 110px;
+  }
+  .feature-block {
+    padding-bottom: 60px;
+  }
+  .feature-title {
+    font-size: 1.5rem;
+  }
+  .feature-description {
+    font-size: 1rem;
+  }
 
+}
 
