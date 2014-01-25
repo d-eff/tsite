@@ -14,9 +14,9 @@
       <img id="header-icon" src="imgs/home_icon.png" alt="home icon">
       <div id="header-title">Teresa Flour Lamb</div>
       <ul id="header-nav-list">
-        <li class="header-nav-item">About</li>
-        <li class="header-nav-item">Contact</li>
-        <li class="header-nav-item">Resume</li>
+        <li class="header-nav-item"><a href="" class="header-nav-link">About</a></li>
+        <li class="header-nav-item"><a href="" class="header-nav-link">Contact</a></li>
+        <li class="header-nav-item"><a href="" class="header-nav-link">Resume</a></li>
       </ul>
     </div>
     </header>
@@ -78,4 +78,15 @@
       </ul>
       </footer>
     </div><!--end page wrapper-->
+    <script type="text/javascript">
+      var menu = document.getElementById("header-nav-list"),
+      menuButton = document.getElementById("header-icon");
+
+    menuButton.addEventListener('click', toggleMenu);
+
+    function toggleMenu(){
+      menu.style.display == "none" ? menu.style.display = "block" : menu.style.display = "none";
+    }   
+    
+    </script>
 </html>
