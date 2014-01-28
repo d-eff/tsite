@@ -297,7 +297,9 @@ header {
 .art-description {
   padding: 20px;
 }
-
+.icon-desc {
+  max-width:500px;
+}
 img.project-description {
   padding: 0px;
 }
