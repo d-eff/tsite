@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Teresa Flour Lamb</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>  
+  <body>
+    <div id="page-wrapper">
+      <img src="imgs/bg_hept.png" alt="white heptagon" id="white-heptagon">
+      <div class="background-text">Parasitic Home</div>
+    <header>
+    <div id="header-wrapper">
+      <a href="index.html">
+        <img id="header-logo" src="imgs/logo_lamb.png" alt="Teresa Flour Lamb logo">
+      </a>
+      <img id="burger-icon" src="imgs/menu.png" alt="mobile menu icon">
+      <div id="header-title">Teresa Flour Lamb</div>
+      <ul id="header-nav-list">
+        <li class="header-nav-item"><a href="" class="header-nav-link">About</a></li>
+        <li class="header-nav-item"><a href="" class="header-nav-link">Contact</a></li>
+        <li class="header-nav-item"><a href="" class="header-nav-link">Resume</a></li>
+      </ul>
+    </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="project-block"><img class="feature-image" src="imgs/parasitic_home.jpg" alt="Parasitic Home Photography Series">
+        <h1 class="feature-title">Parasitic Home</h1>
+        <p class="feature-description">
+        35mm Photography Series featuring found wasp nests on human bodies.
+      </p></div>
+
+      <div class="project-block"><img class="feature-image" src="imgs/parasitichome/arm.jpg" alt="Parasitc Home Early Acceptance">
+        <p class="feature-description">Early Acceptance</p>
+      </div>
+      <div class="project-block">
+        <div class="art-block-left">
+        <img class="feature-image project-description" src="imgs/parasitichome/ear.jpg" alt="Parasitic Home Things We Kepp">
+        <p class="project-description art-description">Things We Keep</p>
+    </div></div>
+      <div class="project-block"><img class="feature-image" src="imgs/parasitichome/hangingon.jpg" alt="Parasitic Home Despite Our Efforts">
+        <p class="feature-description">Despite Our Efforts</p>
+      </div>
+      <div class="project-block">
+        <div class="art-block-right">
+        <img class="feature-image project-description" src="imgs/parasitichome/foot.jpg" alt="Parasitic Home And Miles to Go">
+        <p class="project-description art-description">And Miles to Go</p>
+    </div></div>
+      <div class="project-block"><img class="feature-image" src="imgs/parasitichome/lips.jpg" alt="Parasitic Home If You Don't Have Anything Nice to Say">
+        <p class="feature-description">If You Don't Have Anything Nice to Say</p>
+      </div>
+      <div class="project-block">
+        <div class="art-block-left">
+        <img class="feature-image project-description" src="imgs/parasitichome/hands.jpg" alt="Parasitic Home Skyscraper">
+        <p class="project-description art-description">Skyscraper</p>
+    </div></div>
+  </div><!-- end content wrapper -->
+  <footer>
+      <p id="footer-email">
+        Hello@TeresaFlourLamb.com
+      </p>
+      <div id="buttons"><ul id="footer-icon-list">
+        <li class="footer-icon"><a href="http://laserbeamt.tumblr.com" class="icon-hept_tumblr"></a></li>
+        <li class="footer-icon"><a href="http://instagram.com/flourlamb" class="icon-hept_instagram"></a></li>
+        <li class="footer-icon"><a href="https://twitter.com/flourlamb" class="icon-hept_twitter"></a></li>
+        <li class="footer-icon"><a href="http://www.linkedin.com/in/teresaflourlamb" class="icon-hept_linkedin"></a></li>
+      </ul>
+    </div>
+      </footer>
+    </div><!--end page wrapper-->
+    <script type="text/javascript">
+      var menu = document.getElementById("header-nav-list"),
+      menuButton = document.getElementById("header-icon");
+
+    menuButton.addEventListener('click', toggleMenu);
+
+    function toggleMenu(){
+      menu.style.display == "none" ? menu.style.display = "block" : menu.style.display = "none";
+    }   
+    
+    </script>
+</html>

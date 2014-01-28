@@ -127,15 +127,14 @@ table {
 
 /* ----------END FONTS----------*/
 
-body {
+html {
   font-family: 'aller_lightregular', arial, sans-serif;
   background-color: #eff1ef;
   font-size: 16px;
   color:#4c4c4c;
 }
-
 a {
-  text-decoration:none;
+  color:#4c4c4c
 }
 a:visited {
   color:#4c4c4c;
@@ -214,6 +213,7 @@ header {
   padding: 15px 10px 10px 10px;
   color:#4c4c4c;
   display: inline-block;
+  text-decoration:none;
 }
 
 #content-wrapper {
@@ -232,61 +232,114 @@ header {
 }
 .project-block {
   padding: 0px 0px 30px 0px;
+  text-align: center;
+  clear:both;
 }
-
+.art-block-left {
+  float: left;
+}
+.art-block-right {
+  float: right;
+}
 .feature-image{
   width: 100%;
 }
+#halloween {
+  max-width: 799px;
+}
+.project-image-small {
+  width: 320px;
+  display: inline-block;
+}
+
+.project-image-small-spaced {
+  padding: 0px 24px;
+}
+
 .feature-image-left, .feature-image-right {
   width:48.5%;
 }
+
 .feature-image-left {
   padding: 0px 12px 0px 0px;
   float:left;
 }
+
 .feature-image-right {
   padding: 275px 0px 30px 12px;
   float:right; 
 }
+
 .feature-image-threeq-left {
   width: 65%;
   float:left;
 }
+
 .feature-image-threeq-right {
   width: 65%;
   padding:30px 0px;
   float:right;
 }
 
-.feature-title {
-  font-size: 1.875em;
-  padding: 24px 15px 0px 20px;
-}
-
 .feature-description, .project-description {
   font-size: 1.125rem; 
-  padding: 5px 20px 20px 20px;
+  padding: 5px 40px 20px 40px;
   line-height: 1.3;
+  text-align: left
 }
 
 .project-description {
   padding: 20px 20px 10px 20px;
   text-indent: 3rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.art-description {
+  padding: 20px;
+}
+
+img.project-description {
+  padding: 0px;
+}
+.img-medium {
+  max-width:500px;
+}
+.feature-title {
+  font-size: 1.875em;
+  text-indent: 0;
+  padding: 24px 40px 0px 40px;
+  text-align: left;
+}
+
+.project-section-title {
+  font-family: 'allerbold';
+  font-size:3rem;
+  text-align:left;  
+}
+
+.proj-img-top{
+  padding:0px;
 }
 
 footer {
+  clear:both;
   max-width:1440px;
   margin: 20px auto 0px auto;
 }
 #footer-email {
   float:left;
-  font-size:24px;
+  font-size:1.5rem;
   padding: 25px 0px 30px 16px;
 }
 
-#footer-icon-list {
+#buttons {
   float:right;
-  font-size:48px;
+  position:relative;
+  text-align:left;
+}
+#footer-icon-list {
+  font-size:3rem;
+  position:relative;
   padding: 0px 10px 30px 0px;
 }
 
@@ -294,6 +347,17 @@ footer {
   float:left;
   padding:0px 7px;
 }
+.footer-icon a {
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 1024px){  
+  .proj-img-top {
+    padding-top:30px;
+  }
+}
+
 
 @media screen and (max-width: 800px){
   #header-nav-list {
@@ -304,6 +368,14 @@ footer {
     background-color:#aeddc8;
     display:none;
   } 
+  .feature-image-left {
+    padding: 0px 4px 0px 0px;
+    float:left;
+  }
+  .feature-image-right {
+    padding: 85px 0px 20px 5px;
+    float:right; 
+  }
   .header-nav-item {
     float:none;
   }
@@ -319,23 +391,30 @@ footer {
 }
 
 @media (max-width: 700px) {
+  .project-image-small-spaced {
+    padding:30px 0px 0px 0px;
+  }
   #footer-email {
     display:none;
   }
+  #buttons {
+    left:-50%;
+  }
   #footer-icon-list{
-    float:none;
-    width:320px;
-    margin:0 auto;
     font-size:4rem;
+    left:50%;
   }
 }
 
 @media screen and (max-width: 640px){
+  html {
+    font-size:87.5%;
+  }
   #white-heptagon {
     width:173px;
   }
   .background-text {
-    font-size: 2.7rem;
+    font-size: 3.1rem;
     margin: 75px 126px;
   } 
   #header-wrapper {
@@ -345,7 +424,7 @@ footer {
     width: 100px;
   }
   #header-title {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     padding: 7px 0px;
     margin-left: -14px;
   } 
@@ -362,18 +441,12 @@ footer {
     padding-bottom:20px;
   }
   .feature-title {
-    font-size: 1.5rem;
+  /*  font-size: 1.5rem;*/
+    padding: 24px 20px 0px 20px;
   }
   .feature-description {
-    font-size: 1rem;
-  }
-  .feature-image-left {
-    padding: 0px 4px 0px 0px;
-    float:left;
-  }
-  .feature-image-right {
-    padding: 85px 0px 20px 5px;
-    float:right; 
+/*    font-size: 1rem;*/
+    padding: 5px 20px 20px 20px;
   }
   .feature-image-threeq-right {
     padding:20px 0px;

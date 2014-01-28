@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Teresa Flour Lamb</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>  
+  <body>
+    <div id="page-wrapper">
+      <img src="imgs/bg_hept.png" alt="white heptagon" id="white-heptagon">
+      <div class="background-text">Almost Cooked</div>
+    <header>
+    <div id="header-wrapper">
+      <a href="index.html">
+        <img id="header-logo" src="imgs/logo_lamb.png" alt="Teresa Flour Lamb logo">
+      </a>
+      <img id="burger-icon" src="imgs/menu.png" alt="mobile menu icon">
+      <div id="header-title">Teresa Flour Lamb</div>
+      <ul id="header-nav-list">
+        <li class="header-nav-item"><a href="" class="header-nav-link">About</a></li>
+        <li class="header-nav-item"><a href="" class="header-nav-link">Contact</a></li>
+        <li class="header-nav-item"><a href="" class="header-nav-link">Resume</a></li>
+      </ul>
+    </div>
+    </header>
+
+    <div id="content-wrapper">
+    <div class="project-block"><img class="feature-image" src="imgs/almost_cooked.jpg" alt="Almost Cooked website and app">
+      <h1 class="feature-title">Almost Cooked</h1>
+      <p class="feature-description"><a href="#interface">Interface Design</a>, <a href="#users">User Research</a> and <a href="#branding">Brand Identity</a> for a recipe website and iOS app.</p>
+      <a href="" name="interface"></a>
+      <h2 class="project-section-title">Interface Design</h2>
+      <p class="feature-description project-description">
+      This is a project I worked on from the beginning. We were presented with the challenge of creating a recipe search engine with features such as shopping lists, meal planning, and coupon integration. Many sites existed with similar functionality, but few were gaining any traction. Instead of duplicating products that already existed, we were determined to ask, &ldquo;Why?&rdquo;.<br><br>Try the interactive prototype here. 
+      </p>
+    </div>
+    <div class="project-block"><img class="feature-image" src="imgs/almostcooked/ac_results.png" alt="Almost Cooked final comps"></div>
+    <div class="project-block"><img class="feature-image" src="imgs/almostcooked/ac_details.png" alt="Almost Cooked final comp detail"></div>
+    <div class="project-block">
+      <img class="feature-image project-image-small" src="imgs/almostcooked/ac_mobile.jpg" alt="Almost Cooked Mobile Results">
+      <img class="feature-image project-image-small project-image-small-spaced" src="imgs/almostcooked/ac_mobiledrawer.jpg" alt="Almost Cooked Mobile Drawer">
+      <p class="project-description">
+      The app was meant to work as a companion to the website. It incorporates many aspects of the mobile site while following iOS7 design best practices.
+      </p>
+    </div>
+    <div class="project-block">
+      <a href="" name="users"></a>
+      <h2 class="project-section-title">User Research</h2>
+      <p class="feature-description project-description">
+      We began with an intensive period of consumer research, studying competitor sites and reaching out to our user demographic. I conducted a series of phone interviews, and through commonalities created personas that fairly represented our target users.</p></div>
+    <div class="project-block"><img class="feature-image project-description" src="imgs/almostcooked/ac_persona_primary.jpg" alt="Joyce">
+      <p class="project-description">
+      I named our primary persona and gave her a backstory to promote empathy in our conversations about user experience. Joyce was the center of every decision about user flow, visual design, and even tone of voice.
+      </p>
+    </div>
+    <div class="project-block"><img class="feature-image project-description" src="imgs/almostcooked/ac_persona_secondary.jpg" alt="Kim">
+      <p class="project-description">
+      Our secondary persona, Kim, also represents a large portion of users. Having a second persona helped us cater to an even larger audience.
+      </p>
+    </div>
+    <div class="project-block"><img class="feature-image project-description" src="imgs/almostcooked/storyboard-joyce.png" alt="Almost Cooked Joyce Storyboard">
+      <p class="project-description">
+      I created a storyboard to get a clearer sense of where we could enhance Joyce&rsquo;s experience. Using narrative gave context to our user flow.
+      </p>
+    </div>
+
+    <div class="project-block">  
+      <a href="" name="branding"></a>
+        <h2 class="project-section-title">Brand Identity</h2></div>
+      <div class="project-block">  
+        <img class="feature-image project-description" src="imgs/almostcooked/ac_style.jpg" alt="Almost Cooked Style Guide"> 
+      <p class="project-description">
+      While creating mood boards for the project I drew inspiration from objects one might find in Joyce&rsquo;s kitchen. This style tile was based on vintage Pyrex bowls and includes the illustration style of 1950&rsquo;s cookbooks. The design is bright and modern, yet familiar to Joyce.
+      </p>
+      </div>
+      <div class="project-block"><img class="feature-image project-description" src="imgs/almostcooked/ac_logo_usage.png" alt="Almost Cooked Logo Usage Guide"> 
+      <p class="project-description">
+        When designing the branding I had to consider multiple logo solutions to account for a wide variety of uses.
+      </p>
+      </div>
+
+  </div><!-- end content wrapper -->
+  <footer>
+      <p id="footer-email">
+        Hello@TeresaFlourLamb.com
+      </p>
+      <div id="buttons"><ul id="footer-icon-list">
+        <li class="footer-icon"><a href="http://laserbeamt.tumblr.com" class="icon-hept_tumblr"></a></li>
+        <li class="footer-icon"><a href="http://instagram.com/flourlamb" class="icon-hept_instagram"></a></li>
+        <li class="footer-icon"><a href="https://twitter.com/flourlamb" class="icon-hept_twitter"></a></li>
+        <li class="footer-icon"><a href="http://www.linkedin.com/in/teresaflourlamb" class="icon-hept_linkedin"></a></li>
+      </ul>
+    </div>
+      </footer>
+    </div><!--end page wrapper-->
+    <script type="text/javascript">
+      var menu = document.getElementById("header-nav-list"),
+      menuButton = document.getElementById("header-icon");
+
+    menuButton.addEventListener('click', toggleMenu);
+
+    function toggleMenu(){
+      menu.style.display == "none" ? menu.style.display = "block" : menu.style.display = "none";
+    }   
+    
+    </script>
+</html>
