@@ -447,9 +447,13 @@ footer {
   #content-wrapper {
     padding-top: 110px;
   }
+  #contact .title {
+    font-size:1.5rem;
+    text-indent:0rem;
+    padding:0 0 10px 10px;
+  }
 
-
-
+  
   .feature-title {
   /*  font-size: 1.5rem;*/
     padding: 24px 20px 0px 20px;
@@ -460,5 +464,15 @@ footer {
   }
   .feature-image-threeq-right {
     padding:20px 0px;
+  }
+}
+@media screen and (max-width:320px){
+  #contact .title { 
+    font-size:1.3rem;
+    text-indent:0rem;
+    padding: 0 0 10px 10px;
+  }
+  .contact-list {
+    padding: 0 0 10px 40px;
   }
 }
