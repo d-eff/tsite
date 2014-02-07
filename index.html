@@ -101,13 +101,13 @@
   <div id="contact" class="project-description-block top-pad">
     <h2 class="section-title top-pad">Contact</h2>
     <h4 class="title indent">Hello@TeresaFlourLamb.com</h4>
-    <h4 class="title indent">Let's be friends: <a href="https://twitter.com/flourlamb">{ @FlourLamb }</a>
+    <h4 class="title indent">Let's be friends: <a href="https://twitter.com/flourlamb" target="_blank">{ @FlourLamb }</a>
       </h4>
       <ul class="contact-list">
-        <li class="icon-hept_tumblr"><a href="http://laserbeamt.tumblr.com">inspiration</a></li>
-        <li class="icon-hept_instagram"><a href="http://instagram.com/flourlamb">vignettes</a></li>
-        <li class="icon-hept_twitter"><a href="https://twitter.com/flourlamb">quips</a></li>
-        <li class="icon-hept_linkedin"><a href="http://www.linkedin.com/in/teresaflourlamb">like a boss</a></li>
+        <li class="icon-hept_tumblr"><a href="http://flourlamb.tumblr.com" target="_blank">inspiration</a></li>
+        <li class="icon-hept_instagram"><a href="http://instagram.com/flourlamb" target="_blank">vignettes</a></li>
+        <li class="icon-hept_twitter"><a href="https://twitter.com/flourlamb" target="_blank">quips</a></li>
+        <li class="icon-hept_linkedin"><a href="http://www.linkedin.com/in/teresaflourlamb" target="_blank">like a boss</a></li>
       </ul>
   </div>
   </div><!-- end content wrapper -->
@@ -116,8 +116,12 @@
     <script type="text/javascript">
       var menu = document.getElementById("header-nav-list"),
       menuButton = document.getElementById("burger-icon");
-
-    menuButton.addEventListener('click', toggleMenu);
+    
+      if(!menuButton.addEventListener){
+        menuButton.attachEvent("onclick", toggleMenu)
+      } else {
+        menuButton.addEventListener('click', toggleMenu);
+      }
 
     function toggleMenu(){
       menu.style.display == "none" ? menu.style.display = "block" : menu.style.display = "none";

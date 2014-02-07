@@ -204,6 +204,7 @@ header {
 }
 .headshot {
   max-width:200px;
+  max-height:200px;
 }
 /* ---mostly homepage ---*/
 .white-block {
