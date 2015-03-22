@@ -149,9 +149,9 @@ header {
   margin: 0 auto;
 }
 #header-logo {
-  margin-left:-19px;
   float:left;
-  width:150px;
+  width:75px;
+  padding: 0 0 0 2px;
 }
 #burger-icon {
   float:left;
@@ -160,10 +160,9 @@ header {
   display:none;
 }
 #header-title {
-  font-size:2rem;
-  font-family: 'allerbold', arial, sans-serif;
+  font-size:1.5rem;
   float:left;
-  padding: 5px 24px;
+  padding: 0.75rem 3px;
   text-decoration:none;
 }
 #header-title:hover { 
@@ -177,8 +176,8 @@ header {
   float:left; 
 }
 .header-nav-link {
-  font-size:1.5rem;
-  padding: 15px 10px 10px 10px;
+  font-size:1rem;
+  padding: 18px 10px 10px 10px;
   color:#4c4c4c;
   display: inline-block;
   text-decoration:none;
@@ -207,6 +206,10 @@ header {
   max-height:200px;
 }
 /* ---mostly homepage ---*/
+.cats img{
+  width: 300px;
+}
+
 .white-block {
   background-color:#ffffff;
   padding: 20px;
