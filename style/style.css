@@ -48,27 +48,6 @@ table {
 /* End Resets */
 
 @font-face {
-  font-family: 'aller_lightregular';
-  src: url('../fonts/aller_lt-webfont.eot');
-  src: url('../fonts/aller_lt-webfont.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/aller_lt-webfont.woff') format('woff'),
-        url('../fonts/aller_lt-webfont.ttf') format('truetype'),
-        url('../fonts/aller_lt-webfont.svg#aller_lightregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'allerbold';
-  src: url('../fonts/aller_bd-webfont.eot');
-  src: url('../fonts/aller_bd-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/aller_bd-webfont.woff') format('woff'),
-  url('../fonts/aller_bd-webfont.ttf') format('truetype'),
-  url('../fonts/aller_bd-webfont.svg#allerbold') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
   font-family: 'tsymbols';
   src: url('../fonts/tsymbols.eot');
   src: url('../fonts/tsymbols.eot?#iefix') format('embedded-opentype'),
@@ -109,7 +88,7 @@ table {
 /* ----------END FONTS----------*/
 
 html {
-  font-family: 'aller_lightregular', arial, sans-serif;
+  font-family: 'Lato', sans-serif;
   background:url('../imgs/background.jpg') #eff1ef repeat;
   font-size: 16px;
   color:#4c4c4c;
@@ -139,19 +118,19 @@ header {
 }
 #header-logo {
   float:left;
-  width:75px;
-  padding: 0 0 0 2px;
+  width:60px;
+  padding: .3rem 0 0 1.5rem;
 }
 #burger-icon {
-  float:left;
-  margin: 35px 0px 0px -25px;
+  float:right;
+  margin: 0 .5rem;
   width:55px;
   display:none;
 }
 #header-title {
   font-size:1.5rem;
   float:left;
-  padding: 0.75rem 3px;
+  padding: 0.75rem .5rem;
   text-decoration:none;
 }
 #header-title:hover { 
@@ -159,7 +138,7 @@ header {
 }
 #header-nav-list {
   float:right;
-  padding-right:7px;
+  padding-right: 1.5rem;
 }
 .header-nav-item {
   float:left; 
@@ -187,7 +166,7 @@ header {
   padding: 20px 0px;
 }
 .page-title {
-  font-family: 'allerbold';
+  font-weight: bold;
   font-size:2.7rem;
 }
 .headshot {
@@ -217,7 +196,7 @@ header {
   padding: 0 40px;
 }
 .section-title {
-  font-family: 'allerbold';
+  font-weight: bold;
   font-size:2.8rem;
   padding: 10px 0 36px 0;
 }
@@ -348,7 +327,7 @@ footer {
     float:none;
   }
   .header-nav-link{
-    padding: 15px 30px; 
+    padding: 1.1rem .75rem .75rem 0; 
   }
   #burger-icon {
     display:block;
@@ -358,7 +337,6 @@ footer {
   .project-image-small-spaced {
     padding:20px 0px 20px 0px !important;
   }
-
 
   #footer-email {
     display:none;
@@ -375,23 +353,11 @@ footer {
   html {
     font-size:87.5%;
   }
-  #white-heptagon {
-    width:173px;
-  }
-  .background-text {
-    font-size: 3.1rem;
-    margin: 75px 126px;
-  } 
   #header-wrapper {
     height: 45px;
   }
-  #header-logo {
-    width: 100px;
-  }
   #header-title {
-    font-size: 1.7rem;
-    padding: 7px 0px;
-    margin-left: -14px;
+    padding: .9rem 0 0 0;
   } 
   #header-nav-list {
     left: 110px;
@@ -404,7 +370,6 @@ footer {
     text-indent:0rem;
     padding:0 0 10px 10px;
   }
-
   
   .feature-title {
   /*  font-size: 1.5rem;*/
