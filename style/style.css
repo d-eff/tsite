@@ -68,6 +68,43 @@ table {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'tsymbols';
+  src: url('../fonts/tsymbols.eot');
+  src: url('../fonts/tsymbols.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/tsymbols.woff') format('woff'),
+     url('../fonts/tsymbols.svg') format('svg'),
+     url('../fonts/tsymbols.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon-hept_etsy, .icon-hept_instagram, .icon-hept_lamb, .icon-hept_linkedin, .icon-hept_tumblr, .icon-hept_twitter, .icon-arrow-right, .icon-arrow-left, .icon-eye{
+  font-family: 'tsymbols';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+.icon-hept_instagram:before {
+  content: "\e002";
+  color:#c69c6d;
+}
+.icon-hept_linkedin:before {
+  content: "\e004";
+  color:#007bb6;
+}
+.icon-hept_tumblr:before {
+  content: "\e005";
+  color:#2a445e;
+}
+.icon-hept_twitter:before {
+  content: "\e006";
+  color:#33b9b5;
+}
 
 /* ----------END FONTS----------*/
 
@@ -138,7 +175,7 @@ header {
   color:#4edbb0;
 }
 #content-wrapper {
-  padding-top:130px;
+  padding-top: 4rem;
   max-width: 1024px;
   margin: 0 auto;
   position: relative;
@@ -158,8 +195,10 @@ header {
   max-height:200px;
 }
 /* ---mostly homepage ---*/
-.cats img{
-  width: 300px;
+.cat-box {
+  width: 30%;
+  display: inline-block;
+  padding: 1%;
 }
 
 /* ----Project Pages ----*/
