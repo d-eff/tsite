@@ -29,6 +29,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1.25;
+  height: 100%; 
 }
 ol, ul {
   list-style: none;
@@ -47,43 +48,7 @@ table {
 }
 /* End Resets */
 
-@font-face {
-  font-family: 'tsymbols';
-  src: url('../fonts/tsymbols.eot');
-  src: url('../fonts/tsymbols.eot?#iefix') format('embedded-opentype'),
-     url('../fonts/tsymbols.woff') format('woff'),
-     url('../fonts/tsymbols.svg') format('svg'),
-     url('../fonts/tsymbols.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
 
-.icon-hept_etsy, .icon-hept_instagram, .icon-hept_lamb, .icon-hept_linkedin, .icon-hept_tumblr, .icon-hept_twitter, .icon-arrow-right, .icon-arrow-left, .icon-eye{
-  font-family: 'tsymbols';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-}
-.icon-hept_instagram:before {
-  content: "\e002";
-  color:#c69c6d;
-}
-.icon-hept_linkedin:before {
-  content: "\e004";
-  color:#007bb6;
-}
-.icon-hept_tumblr:before {
-  content: "\e005";
-  color:#2a445e;
-}
-.icon-hept_twitter:before {
-  content: "\e006";
-  color:#33b9b5;
-}
 
 /* ----------END FONTS----------*/
 
@@ -94,11 +59,11 @@ html {
   color:#4d5263;
 }
 a {
-  color:#4c4c4c;
+  color:#4d5263;
   text-decoration: none;
 }
 a:visited {
-  color:#4c4c4c;
+  color:#4d5263;
 }
 
 /*----------HEADER----------*/
@@ -141,7 +106,7 @@ header {
 .header-nav-link {
   font-size:1rem;
   padding: .9rem 0 0 1.5rem;
-  color:#4c4c4c;
+  color:#4d5263;
   display: inline-block;
   text-decoration:none;
 }
@@ -156,8 +121,12 @@ header {
 }
 
 /*------------CONTENT--------------*/
+#page-wrapper {
+  min-height: 100%;
+  position: relative;
+}
 #content-wrapper {
-  padding-top: 4rem;
+  padding: 4rem 0 3.5rem 0;
   max-width: 1024px;
   margin: 0 auto;
   position: relative;
@@ -324,38 +293,40 @@ h1.title {
 /*-----FOOTER ------*/
 footer {
   clear:both;
+  width: 100%;
   max-width:1440px;
-  margin: 20px auto 0px auto;
+  margin: 0 auto;
+  position: absolute;
+  bottom:0;
+  left: 0;
+  height: 3.5rem;
 }
-#footer-email {
+.footer-email {
   float:left;
-  font-size:1.5rem;
-  padding: 25px 0px 30px 16px;
+  font-size: 1rem;
+  padding: .75rem 0 0 2rem;
 }
-
-#buttons {
+.footer-icon-list {
   float:right;
-  position:relative;
-  text-align:left;
+  padding-right: 1.5rem;
 }
-#footer-icon-list {
-  font-size:3rem;
-  position:relative;
-  padding: 0px 10px 30px 0px;
-}
-
 .footer-icon {
-  float:left;
-  padding:0px 7px;
+  font-size:1rem;
+  padding: 0 0 0 1rem;
+  color:#4d5263;
+  display: inline-block;
 }
-.footer-icon a {
-  text-decoration: none;
+.footer-icon img {
+  width: 2.5rem;
 }
-.footer-icon:hover .icon-hept_instagram:before, 
-.footer-icon:hover .icon-hept_tumblr:before, 
-.footer-icon:hover .icon-hept_twitter:before, 
-.footer-icon:hover .icon-hept_linkedin:before {
-  color:#4edbb0;
+.footer-icon img:last-child{
+  display: none;
+}
+.footer-icon:hover img:first-child{
+  display: none;
+}
+.footer-icon:hover img:last-child{
+  display: inline-block;
 }
 
 /*DELETE*/
