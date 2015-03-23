@@ -28,7 +28,7 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 body {
-  line-height: 1;
+  line-height: 1.25;
 }
 ol, ul {
   list-style: none;
@@ -91,7 +91,7 @@ html {
   font-family: 'Lato', sans-serif;
   background:url('../imgs/background.jpg') #eff1ef repeat;
   font-size: 16px;
-  color:#4c4c4c;
+  color:#4d5263;
 }
 a {
   color:#4c4c4c;
@@ -104,11 +104,11 @@ a:visited {
 /*----------HEADER----------*/
 header {
   position:fixed;
-  left:0px;
-  right:0px;
   top: 0;
+  left:0;
+  right:0;
   z-index:10;
-  height: 50px;
+  height: 3rem;
   background-color:#ffffff;
   max-width:1440px;
   margin: 0 auto;
@@ -116,20 +116,22 @@ header {
   -transition: 0.25s top linear;
 }
 #header-logo {
-  float:left;
-  width:60px;
-  padding: .3rem 0 0 1.5rem;
+  float: left;
+  width: 3.75rem;
+  padding: .2rem 0 0 1rem;
 }
 #header-title {
   font-size:1.5rem;
   float:left;
-  padding: 0.75rem .5rem;
+  padding: 0.5rem 0;
   text-decoration: none;
 }
 #header-title:hover { 
   color:#4edbb0;
 }
 #header-nav-list {
+  font-family: 'Lato', sans-serif;
+  font-style: none; 
   float:right;
   padding-right: 1.5rem;
 }
@@ -138,7 +140,7 @@ header {
 }
 .header-nav-link {
   font-size:1rem;
-  padding: 18px 10px 10px 10px;
+  padding: .9rem 0 0 1.5rem;
   color:#4c4c4c;
   display: inline-block;
   text-decoration:none;
@@ -162,9 +164,12 @@ header {
   z-index:2;
   text-align:center;
 }
-#content-wrapper img {
-  width: 100%;
-  padding: 0;
+#content-wrapper a {
+  font-family: 'Lora', serif;
+  font-style: italic;
+}
+#content-wrapper a:hover {
+text-decoration: underline;
 }
 
 /* ---mostly homepage ---*/
@@ -173,19 +178,22 @@ header {
   height: 314px;
   display: inline-block;
   margin: 1%;
-  font-size: 1.5rem;
   background-size: cover;
   text-align: center;
   position: relative;
 }
+.cat-box img{
+  width: 100%;
+}
 .cat-label{
   position: absolute;
-  top:45%;
+  top:40%;
   left:0;
   width:100%;
   color: #ffffff;
   pointer-events: none;
-  font-size: 1.75rem;
+  font-size: 2.75rem;
+  font-weight: bold;
 }
 #cat-tech {
   position: absolute;
@@ -221,6 +229,16 @@ header {
   font-size: 1.5rem;
   padding: 2rem;
   text-align: left;
+}
+/*--------BIO-----------*/
+.bio-pic {
+  max-width: 100%;
+}
+.bio-long {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 1rem;
 }
 
 /* ----Project Pages ----*/
@@ -348,6 +366,9 @@ footer {
 }
 
 @media screen and (max-width: 800px){
+  #header-logo {
+    padding-left: .5rem;
+  }
   #header-nav-list {
     position: fixed;
     top: 0px;
@@ -400,24 +421,12 @@ footer {
   }
 }
 @media screen and (max-width: 640px){
-  html {
-    font-size:87.5%;
-  }
   #header-wrapper {
     height: 45px;
   }
-  #header-title {
-    padding: .9rem 0 0 0;
-  } 
   #content-wrapper {
     padding-top: 110px;
   }
-  #contact .title {
-    font-size:1.5rem;
-    text-indent:0rem;
-    padding:0 0 10px 10px;
-  }
-  
   .feature-title {
   /*  font-size: 1.5rem;*/
     padding: 24px 20px 0px 20px;
@@ -431,12 +440,5 @@ footer {
   }
 }
 @media screen and (max-width:320px){
-  #contact .title { 
-    font-size:1.3rem;
-    text-indent:0rem;
-    padding: 0 0 10px 10px;
-  }
-  .contact-list {
-    padding: 0 0 10px 40px;
-  }
+
 }
