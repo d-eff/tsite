@@ -67,6 +67,12 @@ a {
 a:visited {
   color:#4d5263;
 }
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  font-size: 1rem;
+}
 
 /*----------HEADER----------*/
 header {
@@ -134,9 +140,13 @@ header {
 #content-wrapper a {
   font-family: 'Lora', serif;
   font-style: italic;
+  color:#7e859e;
 }
 #content-wrapper a:hover {
 text-decoration: underline;
+}
+#content-wrapper a:visited {
+  color:#7e859e;
 }
 
 /* ---mostly homepage ---*/
@@ -179,8 +189,7 @@ text-decoration: underline;
   background: url(../imgs/cat_studio.jpg) center / cover no-repeat;
 }
 .bio-short {
-  font-size: 1.5rem;
-  padding: 2rem;
+  padding: 1.5rem 2rem 2rem;
   text-align: left;
 }
 /*--------BIO-----------*/
