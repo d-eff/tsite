@@ -116,7 +116,7 @@ header {
 #burger-icon {
   float:right;
   margin: 0 .5rem;
-  width:55px;
+  width:3rem;
   display:none;
 }
 
@@ -156,7 +156,7 @@ text-decoration: underline;
 }
 .cat-label{
   position: absolute;
-  top:40%;
+  top:45%;
   left:0;
   width:100%;
   color: #ffffff;
@@ -172,7 +172,7 @@ text-decoration: underline;
   height: 314px;
 }
 #cat-tech:hover{
-  background: url(../imgs/cat_tech.png) center / cover no-repeat;
+  background: url(../imgs/cat_tech_hov.png) center / cover no-repeat;
 }
 #cat-design {
   position: absolute;
@@ -182,7 +182,7 @@ text-decoration: underline;
   height: 314px;
 }
 #cat-design:hover{
-  background: url(../imgs/cat_design.png) center / cover no-repeat;
+  background: url(../imgs/cat_design_hov.png) center / cover no-repeat;
 }
 #cat-studio {
   position: absolute;
@@ -192,7 +192,7 @@ text-decoration: underline;
   height: 314px;
 }
 #cat-studio:hover{
-  background: url(../imgs/cat_studio.png) center / cover no-repeat;
+  background: url(../imgs/cat_studio_hov.png) center / cover no-repeat;
 }
 .bio-short {
   font-size: 1.5rem;
@@ -373,6 +373,8 @@ footer {
   }
   #burger-icon {
     display:block;
+    padding:0 0 0 0;
+    stroke: #ffffff;
   }
 }
 @media (max-width: 700px) {
