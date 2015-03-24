@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1.25;
-  height: 100%; 
+  height: 100%;
 }
 ol, ul {
   list-style: none;
@@ -126,9 +126,9 @@ header {
   position: relative;
 }
 #content-wrapper {
-  padding: 4rem 0 3.5rem 0;
+  padding: 4rem 0 0 0;
   max-width: 1024px;
-  margin: 0 auto;
+  margin: 0 auto 3.5rem;
   position: relative;
   z-index:2;
   text-align:center;
@@ -153,6 +153,8 @@ text-decoration: underline;
 }
 .cat-box img{
   width: 100%;
+  -webkit-clip-path: url(../imgs/hex.svg);
+  clip-path: url(../imgs/hex.png);
 }
 .cat-label{
   position: absolute;
@@ -296,6 +298,7 @@ footer {
   width: 100%;
   max-width:1440px;
   margin: 0 auto;
+  padding: 0;
   position: absolute;
   bottom:0;
   left: 0;
