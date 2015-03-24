@@ -67,11 +67,25 @@ a {
 a:visited {
   color:#4d5263;
 }
+h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 0 0 .5rem 0;
+}
 h3 {
   font-size: 1.5rem;
 }
 p {
   font-size: 1rem;
+  padding: .5rem 0 1rem;
+}
+.big-letter {
+  font-size: 2rem;
+}
+.italix {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  line-height: 1.5
 }
 
 /*----------HEADER----------*/
@@ -100,7 +114,7 @@ header {
   text-decoration: none;
 }
 #header-title:hover { 
-  color:#4edbb0;
+  color:#7e859e;
 }
 #header-nav-list {
   font-family: 'Lato', sans-serif;
@@ -119,7 +133,7 @@ header {
   text-decoration:none;
 }
 .header-nav-link:hover {
-  color:#4edbb0;
+  color:#7e859e;
 }
 #burger-icon {
   float:right;
@@ -140,13 +154,13 @@ header {
 #content-wrapper a {
   font-family: 'Lora', serif;
   font-style: italic;
-  color:#7e859e;
 }
 #content-wrapper a:hover {
-text-decoration: underline;
+  text-decoration: underline;
+  color:#7e859e;
 }
 #content-wrapper a:visited {
-  color:#7e859e;
+
 }
 
 /* ---mostly homepage ---*/
@@ -200,7 +214,14 @@ text-decoration: underline;
   max-width: 600px;
   margin: 0 auto;
   text-align: left;
-  padding: 1rem;
+  padding: 1rem 1rem 2rem;
+}
+.resume {
+  margin: 0 auto;
+  text-align: left;
+  padding: 0 2rem 2rem;
+  display: inline-block;
+  vertical-align: top;
 }
 
 /* ----Project Pages ----*/
@@ -324,6 +345,16 @@ footer {
 @media screen and (max-width: 1024px){  
   .proj-img-top {
     padding-top:30px;
+  }
+  .resume {
+    padding: 0rem 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .resume {
+    display: block;
+    max-width: 600px;
   }
 }
 
