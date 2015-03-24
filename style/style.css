@@ -299,6 +299,7 @@ footer {
   bottom:0;
   left: 0;
   height: 2.5rem;
+  padding-bottom: 1rem;
 }
 .footer-email {
   float:left;
@@ -310,9 +311,7 @@ footer {
   padding-right: 1.5rem;
 }
 .footer-icon {
-  font-size:1rem;
   padding: 0 0 0 1rem;
-  color:#4d5263;
   display: inline-block;
 }
 .footer-icon img {
@@ -362,8 +361,6 @@ footer {
     padding: 85px 0px 20px 5px !important;
     float:right; 
   }
-
-
   .header-nav-item {
     float:none;
   }
@@ -380,16 +377,23 @@ footer {
   .project-image-small-spaced {
     padding:20px 0px 20px 0px !important;
   }
-
-  #footer-email {
-    display:none;
+  footer {
+    text-align: center;
   }
-  #buttons {
-    left:-50%;
+  .footer-email {
+    font-size: 1.25rem;
+    float: none;
+    padding: 2rem 0 2rem 0;
+    color: #ffffff;
+    background-color: #4d5263;
   }
-  #footer-icon-list{
-    font-size:4rem;
-    left:50%;
+  .footer-icon-list {
+    float: none;
+    padding: 0 .5rem 2rem 0;
+    background-color: #4d5263;
+  }
+  .footer-icon img {
+    width: 4rem;
   }
 }
 @media screen and (max-width: 640px){
