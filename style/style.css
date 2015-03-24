@@ -141,8 +141,8 @@ text-decoration: underline;
 
 /* ---mostly homepage ---*/
 .cat-box {
-  width: 314px;
-  height: 314px;
+  width: 315px;
+  height: 365px;
   display: inline-block;
   margin: 1%;
   background-size: cover;
@@ -151,8 +151,6 @@ text-decoration: underline;
 }
 .cat-box img{
   width: 100%;
-  -webkit-clip-path: url(../imgs/hex.svg);
-  clip: rect(10px, 290px, 190px, 10px);
 }
 .cat-label{
   position: absolute;
@@ -164,32 +162,18 @@ text-decoration: underline;
   font-size: 2.75rem;
   font-weight: bold;
 }
-#cat-tech {
+.cat-span {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 314px;
+  height: 365px;
 }
 #cat-tech:hover{
   background: url(../imgs/cat_tech.jpg) center / cover no-repeat;
 }
-#cat-design {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 314px;
-}
 #cat-design:hover{
   background: url(../imgs/cat_design.jpg) center / cover no-repeat;
-}
-#cat-studio {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 314px;
 }
 #cat-studio:hover{
   background: url(../imgs/cat_studio.jpg) center / cover no-repeat;
@@ -389,8 +373,11 @@ footer {
   }
   .footer-icon-list {
     float: none;
-    padding: 0 .5rem 2rem 0;
+    padding: 0 0 2rem 0;
     background-color: #4d5263;
+  }
+  .footer-icon {
+    padding: 0 .75rem;
   }
   .footer-icon img {
     width: 4rem;
@@ -413,6 +400,10 @@ footer {
   }
   .feature-image-threeq-right {
     padding:20px 0px;
+  }
+
+  .footer-icon {
+    padding: 0 .5rem;
   }
 }
 @media screen and (max-width:320px){
