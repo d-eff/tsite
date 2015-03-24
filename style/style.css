@@ -154,7 +154,7 @@ text-decoration: underline;
 .cat-box img{
   width: 100%;
   -webkit-clip-path: url(../imgs/hex.svg);
-  clip-path: url(../imgs/hex.png);
+  clip: rect(10px, 290px, 190px, 10px);
 }
 .cat-label{
   position: absolute;
@@ -174,7 +174,7 @@ text-decoration: underline;
   height: 314px;
 }
 #cat-tech:hover{
-  background: url(../imgs/cat_tech_hov.png) center / cover no-repeat;
+  background: url(../imgs/cat_tech.jpg) center / cover no-repeat;
 }
 #cat-design {
   position: absolute;
@@ -184,7 +184,7 @@ text-decoration: underline;
   height: 314px;
 }
 #cat-design:hover{
-  background: url(../imgs/cat_design_hov.png) center / cover no-repeat;
+  background: url(../imgs/cat_design.jpg) center / cover no-repeat;
 }
 #cat-studio {
   position: absolute;
@@ -194,7 +194,7 @@ text-decoration: underline;
   height: 314px;
 }
 #cat-studio:hover{
-  background: url(../imgs/cat_studio_hov.png) center / cover no-repeat;
+  background: url(../imgs/cat_studio.jpg) center / cover no-repeat;
 }
 .bio-short {
   font-size: 1.5rem;
@@ -297,8 +297,6 @@ footer {
   clear:both;
   width: 100%;
   max-width:1440px;
-  margin: 0 auto;
-  padding: 0;
   position: absolute;
   bottom:0;
   left: 0;
