@@ -360,6 +360,9 @@ footer {
   .resume {
     padding: 0rem 1rem 2rem;
   }
+  .portfolio-item img{
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 900px){
