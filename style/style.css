@@ -201,6 +201,15 @@ header {
   padding: 1.5rem 2rem 2rem;
   text-align: left;
 }
+/*--------PORTFOLIO---------*/
+.portfolio-item {
+  text-align:left;
+  padding: 1rem 0;
+}
+.portfolio-description {
+  padding: 1rem 1.5rem;
+}
+
 /*--------BIO-----------*/
 .bio-pic {
   max-width: 100%;
