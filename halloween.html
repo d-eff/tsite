@@ -2,53 +2,82 @@
 <html lang="en">
   <head>
     <title>Teresa Flour Lamb</title>
-    <link rel="stylesheet" type="text/css" href="style/style2.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
     <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   </head>  
   <body>
-    <div id="page-wrapper">
-      <img src="imgs/bg_hept.png" alt="white heptagon" id="white-heptagon">
-      <div class="background-text">Halloween Freaky-nomics</div>
+
     <header>
       <a href="index.html">
-        <img id="header-logo" src="imgs/logo_lamb.png" alt="Teresa Flour Lamb logo">
+        <img id="header-logo" src="imgs/logo_lamb.svg" alt="Teresa Flour Lamb logo">
       </a>
-      <img id="burger-icon" src="imgs/menu.png" alt="mobile menu icon">
       <a id="header-title" href="index.html">Teresa Flour Lamb</a>
+      <img id="burger-icon" src="imgs/menu.svg" alt="menu">
       <ul id="header-nav-list">
-        <li class="header-nav-item"><a href="index.html" class="header-nav-link">Portfolio</a></li>
-        <li class="header-nav-item"><a href="index.html#about" class="header-nav-link">About</a></li>
-        <li class="header-nav-item"><a href="index.html#contact" class="header-nav-link">Contact</a></li>
+        <li class="header-nav-item"><a href="portfolio.html" class="header-nav-link">PORTFOLIO</a></li>
+        <li class="header-nav-item"><a href="about.html" class="header-nav-link">INFO</a></li>
+        <li class="header-nav-item"><a href="http://blog.teresaflourlamb.com/" class="header-nav-link">BLOG</a></li>
       </ul>
     </header>
 
-    <div id="content-wrapper">
-      
-      <img src="imgs/infographic_halloween.jpg" alt="Halloween Freaky-nomics infographic">
-    <div class="project-description-block">
-      <h4 class="title">Halloween Freaky-nomics</h4>
-      <p class="description">Infographic displaying spending in America for Halloween.<br><br>See the original post from October 2012 at <a href="http://www.pronto.com/infographics/halloween-freaky-nomics">Pronto.com</a>.<br><br>The infographic was featured on dozens of websites and blogs such as <a href="http://visual.ly/halloween-freaky-nomics">Visual.ly</a>, <a href="http://cheezburger.com/7836868864">Cheezburger.com</a>, <a href="http://dailyinfographic.com/halloween-freakynomics-infographic">Daily Infographic</a>, and <a href="http://iwastesomuchtime.com/on/?i=53196">I Waste So Much Time</a>.</p>
-    </div>
+    <div id="content-wrapper" class="project-page">
 
-    <img class="eight-hundred center" src="imgs/infographic_halloween_full.jpg" alt="Halloween Freaky-nomics full infographic">
+          <div class="portfolio-item">
+                <img src="imgs/infographic_halloween.jpg" alt="Halloween Freaky-nomics infographic">
+              <div class="portfolio-description">
+                <h1>Halloween Freaky-nomics</h1>
+                <p>Infographic displaying spending in America for Halloween.
+                </p>
+              </div>
+          </div><!--project 7-->
+
+
+          <div class="project-section">
+            <p>
+                  This infographic was <a href="http://www.pronto.com/infographics/halloween-freaky-nomics">originally posted on Pronto.com</a>, then featured on dozens of websites and blogs such as <a href="http://visual.ly/halloween-freaky-nomics">Visual.ly</a>, <a href="http://cheezburger.com/7836868864">Cheezburger.com</a>, <a href="http://dailyinfographic.com/halloween-freakynomics-infographic">Daily Infographic</a>, and <a href="http://iwastesomuchtime.com/on/?i=53196">I Waste So Much Time</a>.
+            </p>
+ 
+
+          <img class="eight-hundred center" src="imgs/infographic_halloween_full.jpg" alt="Halloween Freaky-nomics full infographic">
+
+          </div><!--project section-->
     
-  
 
   </div><!-- end content wrapper -->
+
   <footer>
-      <p id="footer-email">
+      <p class="footer-email">
         Hello@TeresaFlourLamb.com
       </p>
-      <div id="buttons"><ul id="footer-icon-list">
-        <li class="footer-icon"><a href="http://flourlamb.tumblr.com" target="_blank" class="icon-hept_tumblr"></a></li>
-        <li class="footer-icon"><a href="http://instagram.com/flourlamb" target="_blank" class="icon-hept_instagram"></a></li>
-        <li class="footer-icon"><a href="https://twitter.com/flourlamb" target="_blank" class="icon-hept_twitter"></a></li>
-        <li class="footer-icon"><a href="http://www.linkedin.com/in/teresaflourlamb" target="_blank" class="icon-hept_linkedin"></a></li>
+      <ul class="footer-icon-list">
+        <li class="footer-icon">
+          <a href="https://twitter.com/flourlamb">
+            <img src="imgs/social/twitter.svg" alt="twitter">
+            <img src="imgs/social/twitter_hov.svg" alt="twitter">
+          </a>
+        </li>
+        <li class="footer-icon">
+          <a href="http://instagram.com/flourlamb">
+            <img src="imgs/social/instagram.svg" alt="instagram">
+            <img src="imgs/social/instagram_hov.svg" alt="instagram">
+          </a>
+        </li>
+        <li class="footer-icon">
+          <a href="https://github.com/t-lamb">
+            <img src="imgs/social/github.svg" alt="github">
+            <img src="imgs/social/github_hov.svg" alt="github">
+          </a>
+        </li>
+        <li class="footer-icon">
+          <a href="http://www.linkedin.com/in/teresaflourlamb">
+            <img src="imgs/social/linkedin.svg" alt="linkedin">
+            <img src="imgs/social/linkedin_hov.svg" alt="linkedin">
+          </a>
+        </li>
       </ul>
-    </div>
-      </footer>
-    </div><!--end page wrapper-->
+  </footer>
+
     <script type="text/javascript">
       var menu = document.getElementById("header-nav-list"),
       menuButton = document.getElementById("burger-icon");
