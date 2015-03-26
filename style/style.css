@@ -206,14 +206,6 @@ header {
   padding: 1.5rem 2rem 2rem;
   text-align: left;
 }
-/*--------PORTFOLIO---------*/
-.portfolio-item {
-  text-align:left;
-  padding: 1rem 0;
-}
-.portfolio-description {
-  padding: 1rem 1.5rem;
-}
 
 /*--------BIO-----------*/
 .bio-pic {
@@ -233,7 +225,16 @@ header {
   vertical-align: top;
 }
 
-/* ----Project Pages ----*/
+/*--------PORTFOLIO---------*/
+.portfolio-item {
+  text-align:left;
+  padding: 1rem 0;
+}
+.portfolio-description {
+  padding: 1rem 1.5rem;
+}
+
+/* -------PROJECT PAGES-------*/
 .project-section {
   padding: 0;
 }
@@ -249,8 +250,7 @@ header {
   padding: 1rem 0;
   margin: 0 auto;
 }
-
-.project-page img {
+.project-section img {
   width: 100%;
   padding: 1rem 0;
 }
