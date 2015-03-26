@@ -67,6 +67,11 @@ a {
 a:visited {
   color:#4d5263;
 }
+h1 {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 1.5rem;
+}
 h2 {
   font-size: 1.25rem;
   font-weight: bold;
@@ -144,7 +149,7 @@ header {
 
 /*------------CONTENT--------------*/
 #content-wrapper {
-  padding: 4rem 0 0 0;
+  padding: 0;
   max-width: 1024px;
   margin: 0 auto 3.5rem;
   position: relative;
@@ -229,37 +234,25 @@ header {
 }
 
 /* ----Project Pages ----*/
-.project-description-block {
-  clear:both;
-  text-align:left;
-  width:100%;
+.project-section {
+  padding: 0;
 }
-.title {
-  font-size: 1.875rem;
-  padding: 0 0 10px 40px;
-}
-.description {
-  font-size: 1.125rem;
-  line-height: 1.3;
-  padding: 0 40px;
-}
-.section-title {
-  font-weight: bold;
-  font-size:2.8rem;
-  padding: 10px 0 36px 0;
-}
-.project-description-block a {
-  font-weight:bold;
-  text-decoration:none;
-}
-.project-description-block a:hover {
-  color:#4edbb0;
-}
-.project-caption {
-  max-width: 600px;
-  margin: 0 auto;
+.project-section p {
+  max-width:700px;
   text-align: left;
-  padding: 1rem 1rem 2rem;
+  padding: 0 0 1rem;
+  margin: 0 auto;
+}
+.project-section h3 {
+  max-width:700px;
+  text-align: left;
+  padding: 1rem 0;
+  margin: 0 auto;
+}
+
+.project-page img {
+  width: 100%;
+  padding: 1rem 0;
 }
 
 /* -----SIZING------*/
@@ -363,6 +356,9 @@ footer {
   .portfolio-item img{
     width: 100%;
   }
+  .project-section p,h3{
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 900px){
@@ -440,9 +436,6 @@ footer {
 @media screen and (max-width: 640px){
   #header-wrapper {
     height: 45px;
-  }
-  #content-wrapper {
-    padding-top: 110px;
   }
   .feature-title {
   /*  font-size: 1.5rem;*/
