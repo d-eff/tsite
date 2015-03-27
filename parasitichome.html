@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Teresa Flour Lamb</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1">
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>  
+  <body>
+
+    <header>
+      <a href="index.html">
+        <img id="header-logo" src="imgs/logo_lamb.svg" alt="Teresa Flour Lamb logo">
+      </a>
+      <a id="header-title" href="index.html">Teresa Flour Lamb</a>
+      <img id="burger-icon" src="imgs/menu.svg" alt="menu">
+      <ul id="header-nav-list">
+        <li class="header-nav-item"><a href="portfolio.html" class="header-nav-link">PORTFOLIO</a></li>
+        <li class="header-nav-item"><a href="about.html" class="header-nav-link">INFO</a></li>
+        <li class="header-nav-item"><a href="http://blog.teresaflourlamb.com/" class="header-nav-link">BLOG</a></li>
+      </ul>
+    </header>
+
+    <div id="content-wrapper" class="project-page">
+
+          <div class="portfolio-item">
+              <img src="imgs/parasitic_home.jpg" alt="Parasitic Home art series">
+              <div class="portfolio-description">
+                <h3>Parasitic Home</h3>
+                <p>35mm Photography Series featuring found wasp nests on human bodies.</p>
+              </div>
+          </div><!--project 9-->
+
+          <ul class="project-list">
+
+            <li>
+              <img src="imgs/parasitichome/arm.jpg" alt="Parasitc Home Early Acceptance"> 
+              <div class="project-caption">
+                <p>Early Acceptance</p>
+              </div>
+            </li>
+
+            <li>
+              <img src="imgs/parasitichome/ear.jpg" alt="Parasitic Home Things We Keep">
+              <div class="project-caption">
+                <p>Things We Keep</p>
+              </div>
+            </li>
+
+            <li>
+              <img src="imgs/parasitichome/hangingon.jpg" alt="Parasitic Home Despite Our Efforts">
+              <div class="project-caption">
+                <p>Despite Our Efforts</p>
+              </div>
+            </li>
+
+            <li>
+              <img src="imgs/parasitichome/foot.jpg" alt="Parasitic Home And Miles to Go">
+              <div class="project-caption">
+                <p>And Miles to Go</p>
+              </div>
+            </li>
+
+            <li>
+              <img src="imgs/parasitichome/lips.jpg" alt="Parasitic Home If You Don't Have Anything Nice to Say">
+              <div class="project-caption">
+                <p>If You Don't Have Anything Nice to Say</p>
+              </div>
+            </li>
+
+            <li>
+              <img src="imgs/parasitichome/hands.jpg" alt="Parasitic Home Skyscraper">
+              <div class="project-caption">
+                <p>Skyscraper</p>
+              </div>
+            </li>
+            
+          </ul>
+
+  </div><!-- end content wrapper -->
+
+  <footer>
+      <p class="footer-email">
+        Hello@TeresaFlourLamb.com
+      </p>
+      <ul class="footer-icon-list">
+        <li class="footer-icon">
+          <a href="https://twitter.com/flourlamb">
+            <img src="imgs/social/twitter.svg" alt="twitter">
+            <img src="imgs/social/twitter_hov.svg" alt="twitter">
+          </a>
+        </li>
+        <li class="footer-icon">
+          <a href="http://instagram.com/flourlamb">
+            <img src="imgs/social/instagram.svg" alt="instagram">
+            <img src="imgs/social/instagram_hov.svg" alt="instagram">
+          </a>
+        </li>
+        <li class="footer-icon">
+          <a href="https://github.com/t-lamb">
+            <img src="imgs/social/github.svg" alt="github">
+            <img src="imgs/social/github_hov.svg" alt="github">
+          </a>
+        </li>
+        <li class="footer-icon">
+          <a href="http://www.linkedin.com/in/teresaflourlamb">
+            <img src="imgs/social/linkedin.svg" alt="linkedin">
+            <img src="imgs/social/linkedin_hov.svg" alt="linkedin">
+          </a>
+        </li>
+      </ul>
+  </footer>
+
+    <script type="text/javascript">
+      var menu = document.getElementById("header-nav-list"),
+      menuButton = document.getElementById("burger-icon");
+
+    menuButton.addEventListener('click', toggleMenu);
+
+    function toggleMenu(){
+      menu.style.display == "none" ? menu.style.display = "block" : menu.style.display = "none";
+    }   
+    
+    </script>
+  </body>
+</html>

@@ -149,7 +149,7 @@ header {
 
 /*------------CONTENT--------------*/
 #content-wrapper {
-  padding: 0;
+  padding: 2rem 0 0;
   max-width: 1024px;
   margin: 0 auto 3.5rem;
   position: relative;
@@ -251,22 +251,26 @@ header {
   margin: 0 auto;
 }
 .project-section img {
-  min-width: 100%;
+  max-width: 100%;
   padding: 1rem 0;
 }
-.caption-left {
-  width: 100%;
-  min-width: 1024px;
+.project-list {
   text-align: left;
-  text-indent: 3rem;
-  padding: 0 0 1rem;
+  margin: 0 auto;
+  width: 700px;
 }
-.caption-right {
-  width: 100%;
-  min-width: 1024px;
-  text-align: right;
-  padding: 0 0 1rem;
-  vertical-align: baseline;
+.project-list img {
+  max-height: 800px;
+  max-width: 700px;
+}
+.project-caption {
+  max-width:600px;
+  text-align: left;
+  padding: .75rem 0 2.5rem 2rem;
+}
+.project-caption h3 {
+ font-size: 1.25rem;
+ padding: 0;
 }
 
 /* -----SIZING------*/
@@ -302,15 +306,7 @@ header {
 .top-pad {
   padding-top: 20px;
 }
-.feature-image-left {
-  padding: 20px 12px 0px 0px !important;
-  float:left;
-}
 
-.feature-image-right {
-  padding: 275px 0px 30px 12px !important;
-  float:right; 
-}
 /*FIX*/
 h1.title {
   padding-left:0px;
@@ -395,20 +391,12 @@ footer {
     float: none;
     margin: 0px;
     padding: 0px;
-    background-color: #aeddc8;
+    background-color: #d7dae3;
     text-align: center;
     overflow: hidden;
     -webkit-transition: 0.25s height linear;
     -transition: 0.25s height linear;
   } 
-  .feature-image-left {
-    padding: 20px 4px 0px 0px !important;
-    float:left;
-  }
-  .feature-image-right {
-    padding: 85px 0px 20px 5px !important;
-    float:right; 
-  }
   .header-nav-item {
     float:none;
   }
@@ -419,6 +407,15 @@ footer {
     display:block;
     padding:0 0 0 0;
     stroke: #ffffff;
+  }
+  .project-list {
+    width: 90%;
+  }
+  .project-list img {
+    width:100%;
+  }
+  .project-caption {
+    padding: .75rem 0 2.5rem;
   }
 }
 @media (max-width: 700px) {
@@ -451,18 +448,6 @@ footer {
   #header-wrapper {
     height: 45px;
   }
-  .feature-title {
-  /*  font-size: 1.5rem;*/
-    padding: 24px 20px 0px 20px;
-  }
-  .feature-description {
-/*    font-size: 1rem;*/
-    padding: 5px 20px 20px 20px;
-  }
-  .feature-image-threeq-right {
-    padding:20px 0px;
-  }
-
   .footer-icon {
     padding: 0 .5rem;
   }
