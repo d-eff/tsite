@@ -308,10 +308,6 @@ header {
   padding-top: 20px;
 }
 
-/*FIX*/
-h1.title {
-  padding-left:0px;
-}
 
 /*FIX*/
 .project-image-small-spaced {
@@ -356,7 +352,6 @@ footer {
   display: inline-block;
 }
 
-/*DELETE*/
 @media screen and (max-width: 1024px){  
   .proj-img-top {
     padding-top:30px;
@@ -407,7 +402,6 @@ footer {
   #burger-icon {
     display:block;
     padding:0 0 0 0;
-    stroke: #ffffff;
   }
   .project-list {
     width: 90%;
@@ -452,7 +446,18 @@ footer {
   .footer-icon {
     padding: 0 .5rem;
   }
+  #header-title {
+    font-size: 1.25rem;
+    padding: 0.7rem 0;
+  }
+  #header-logo {
+    width: 3rem;
+    padding: .45rem 0 0 .5rem;
+  }
 }
 @media screen and (max-width:320px){
+  .footer-icon img {
+    width: 3rem;
+  }
 
 }

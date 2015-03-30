@@ -24,52 +24,50 @@
     <div id="content-wrapper" class="project-page">
 
           <div class="portfolio-item">
-                <img src="imgs/mindspark.jpg" alt="Mindspark brand design">
+              <img src="imgs/pet.jpg" alt="Pet electronic fur">
               <div class="portfolio-description">
-                <h1>Mindspark Rebrand</h1>
-                <p>Brand Identity and Logo Design for an established internet application company. Collaboration with <a href="http://www.thecitylion.com">Marie McGwier</a>.</p>
+                <h1>Pet</h1>
+                <p>A piece of fur that can detect petting. And it purrs.</p>
               </div>
-          </div><!--project 3-->
+          </div><!--project 2-->
 
       <div class="project-section">
 
-      <img src="imgs/mindspark/ms_stationary.jpg" alt="Mindspark logo stationary examples">
-
-      <img src="imgs/mindspark/mindspark_finaldesigns.jpg">
-
+      <img src="imgs/pet/pet_3.jpg" alt="Pet in action">
       </div><!--project section 1-->
 
-
       <div class="project-section">
-      <h3>The Brief</h3>
 
+      <h3>The Process</h3>
       <p>
-        We were asked by Mindspark&rsquo;s COO to make a new logo reflecting the new direction of the company. While the old logo embodied the previous company vision of "digital snacks", the new logo should express innovation and professionalism.
+        This project started as a material exploration for developing soft interfaces. During my research I had students interact with a variety of soft surfaces. I found that everyone reacted imediately to fur, petting along its grain. The idea behind Pet was to be able to sense and provide feedback for that gesture.
       </p>
 
-      <img class="eight-hundred center" src="imgs/mindspark/ms_logo_old.jpg" alt="Mindspark old logo">
+      <img src="imgs/pet/pet_proto.jpg" alt="Pet prototype">
 
       <p>
-        We approached the design by updating the font first, then pairing it with abstract geometric designs to represent the "spark".
+      I started by creating a simple pressure sensor using pressure-sensitive fabric. In my first prototypes petting the fur altered the brightness of an LED.
       </p>
 
-      <img class="eight-hundred center" src="imgs/mindspark/ms_concepts.jpg" alt="Mindspark logo concepts">
+      <img src="imgs/pet/pet_circuits.jpg" alt="Pet circuitry">
 
-      </div><!--project section 2-->
-
-      <div class="project-section">
-      <h3>Style Guide</h3>
       <p>
-        We created a comprehensive style guide for our Marketing and HR Departments.
+      In order to detect petting I needed to detect both pressure and motion. I programmed an Arduino microcontroller to compare pressure across the fur and trigger a vibration motor.
       </p>
 
-      <img class="eight-hundred center" src="imgs/mindspark/mindspark_guide1.jpg" alt="Mindspark logo usage guide page 1">
-      <img class="eight-hundred center" src="imgs/mindspark/mindspark_guide2.jpg" alt="Mindspark logo usage guide page 2">
-      <img class="eight-hundred center" src="imgs/mindspark/mindspark_guide3.jpg" alt="Mindspark logo usage guide page 3">
-      <img class="eight-hundred center" src="imgs/mindspark/mindspark_guide4.jpg" alt="Mindspark logo usage guide page 4">
-      <img class="eight-hundred center" src="imgs/mindspark/mindspark_guide5.jpg" alt="Mindspark logo usage guide page 5">
+      <img src="imgs/pet/pet_working.jpg" alt="Pet in progress">
 
-    </div><!--project section 3-->
+      <p>
+      The biggest challenge was to differentiate directions. I used just two inputs I added LEDs to my circuit to provide additional feedback while I iterated the code. Because the fabric was so sensitive I added a rubber base to absorb vibrations from other sources. I chose a flat, flexible design to emphasize the simplicity of the circuit.
+      </p>
+
+      <img src="imgs/pet/pet_show.jpg" alt="Pet in Winter Show"> 
+
+      <p>
+      Pet was featured in the <a href="http://itp.nyu.edu/shows/winter2014/category/projects/">ITP 2014 Winter Show</a>.  
+      </p>
+
+    </div><!--project section 2-->
 
 
   </div><!-- end content wrapper -->
