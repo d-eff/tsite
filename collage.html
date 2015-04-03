@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Teresa Flour Lamb</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700|Lora:400italic,700italic' rel='stylesheet' type='text/css'>
+  </head>  
+  <body>
+
+    <header>
+      <a href="index.html">
+        <img id="header-logo" src="imgs/logo_lamb.svg" alt="Teresa Flour Lamb logo">
+      </a>
+      <a id="header-title" href="index.html">Teresa Flour Lamb</a>
+      <img id="burger-icon" src="imgs/menu.svg" alt="menu">
+      <ul id="header-nav-list">
+        <li class="header-nav-item"><a href="portfolio.html" class="header-nav-link">PORTFOLIO</a></li>
+        <li class="header-nav-item"><a href="about.html" class="header-nav-link">INFO</a></li>
+        <li class="header-nav-item"><a href="http://blog.teresaflourlamb.com/" class="header-nav-link">BLOG</a></li>
+      </ul>
+    </header>
+
+        <div id="content-wrapper">
+
+          <div class="portfolio-item">
+              <img src="imgs/collage.jpg" alt="Collages">
+              <div class="portfolio-description">
+                <h1>Collage</h1>
+                <p>Work with found images, found objects, and natural materials.</p>
+              </div>
+          </div><!--project 2-->
+
+          <ul class="project-list">
+
+            <li>
+                <img src="imgs/collage/landscape.jpg" alt="Landscape fabric collage">
+              <div class="project-caption">
+                <h3>Landscape I</h3>
+                <p>
+                  Fabric, Paper, Found Objects
+                </p>
+              </div>
+            </li>
+
+            <li>
+                <img src="imgs/collage/landscape2.jpg" alt="Landscape 2 fabric collage">
+              <div class="project-caption">
+                <h3>Landscape II</h3>
+                <p>
+                  Fabric, Gel medium transfer, Wax, Found materials
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <img src="imgs/collage/patron_blue.jpg" alt="Patron Saint collage">
+              <div class="project-caption">
+                <h3>The Patron Saint of Accent Pillows</h3>
+                <p>Found images</p>
+              </div>
+            </li>
+
+            <li>
+              <img src="imgs/collage/structures.jpg" alt="Structures collage">
+              <div class="project-caption">
+                <h3>The Problem with Structures</h3>
+                <p>
+                  Found images, Embroidery
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <img src="imgs/collage/bearsandglands.jpg" alt="The Unplace collage">
+              <div class="project-caption">
+                <h3>The Unplace</h3>
+                <p>
+                  Found images
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <img src="imgs/collage/mountain.jpg" alt="Mountain collage">
+              <div class="project-caption">
+                <h3>From a Mountain Top</h3>
+                <p>
+                  Found images
+                </p>
+                <p>
+                  Published in the April 2012 issue of <a href="http://english.fsu.edu/kudzu">The Kudzu Review</a>
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div><!-- end content wrapper -->
+       
+  <footer>
+      <p class="footer-email">
+        Hello@TeresaFlourLamb.com
+      </p>
+      <ul class="footer-icon-list">
+        <li class="footer-icon">
+          <a href="https://twitter.com/flourlamb">
+            <img src="imgs/social/twitter.svg" alt="twitter">
+            <img src="imgs/social/twitter_hov.svg" alt="twitter">
+          </a>
+        </li>
+        <li class="footer-icon">
+          <a href="http://instagram.com/flourlamb">
+            <img src="imgs/social/instagram.svg" alt="instagram">
+            <img src="imgs/social/instagram_hov.svg" alt="instagram">
+          </a>
+        </li>
+        <li class="footer-icon">
+          <a href="https://github.com/t-lamb">
+            <img src="imgs/social/github.svg" alt="github">
+            <img src="imgs/social/github_hov.svg" alt="github">
+          </a>
+        </li>
+        <li class="footer-icon">
+          <a href="http://www.linkedin.com/in/teresaflourlamb">
+            <img src="imgs/social/linkedin.svg" alt="linkedin">
+            <img src="imgs/social/linkedin_hov.svg" alt="linkedin">
+          </a>
+        </li>
+      </ul>
+  </footer>
+
+
+    <script type="text/javascript">
+
+    var menu = document.getElementById("header-nav-list"),
+        header = document.getElementsByTagName("header")[0],
+        menuButton = document.getElementById("burger-icon"),
+        menulinks = document.getElementsByClassName('header-nav-link'),
+        backup = document.getElementById('backtotop');
+
+    if(!menuButton.addEventListener){
+        menuButton.attachEvent("onclick", function(e){
+            toggleMenu();    
+            e.preventDefault();
+        });
+    } else {
+        menuButton.addEventListener('click', function(e){
+            toggleMenu();    
+            e.preventDefault();
+        });
+    }
+
+    for(var link = 0; link < menulinks.length; link++){
+        (function(){
+            menulinks[link].addEventListener('click', toggleMenu);
+        })();
+    }
+
+    var scrolling = false;
+    window.addEventListener('scroll', function(e){
+        if(!scrolling){
+            scrolling = true;
+            if(window.scrollY < window.innerHeight){
+                backup.style.opacity = '0';
+                window.setTimeout(function(){
+                    backup.style.visibility = 'hidden';
+                    scrolling = false;
+                }, 1000);
+            } else { 
+                backup.style.opacity = '1';
+                backup.style.visibility = 'visible';
+                scrolling = false;
+            }
+        }
+    })
+
+    backtotop.addEventListener('click', function(e){
+        window.scrollTo(0,0);
+    });
+
+    function toggleMenu(){
+        if(window.innerWidth <= 800){
+            menu.style.height = menu.style.height === '162px' ? '0px' : '162px';
+            header.style.top = header.style.top === '162px' ? '0px' : '162px';
+        }
+    }   
+
+    
+    
+    </script>
+  </body>
+</html>
