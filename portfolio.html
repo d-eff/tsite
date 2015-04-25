@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700|Lora:400italic,700italic' rel='stylesheet' type='text/css'>
+    <script src="main.js" type="text/javascript"></script>
   </head>  
   <body>
 
@@ -24,8 +25,18 @@
 
         <div id="content-wrapper">
 
+<div class="portfolio-item">
+              <a href="theknit.html">
+                <img src="imgs/theknit.jpg" alt="the knit net knitting web app">
+              </a>
+              <div class="portfolio-description">
+                <h3><a href="theknit.html">the Knit net</a></h3>
+                <p>Design and Development of a web app that aims to improve the experience of crafting something by hand. </p>
+                <a href="theknit.html">+ View Project</a>
+              </div>
+          </div><!--project 0-->
 
-          <div class="portfolio-item">
+            <div class="portfolio-item">
               <a href="wearables.html">
                 <img src="imgs/wearables.jpg" alt="Wearable electronics explorations">
               </a>
@@ -76,7 +87,7 @@
               </a>
               <div class="portfolio-description">
                 <h3><a href="almostcooked.html">AlmostCooked</a></h3>
-                <p>Interface Design and Brand Identity for a recipe website and unreleased iOS app.</p>
+                <p>Interface Design and Brand Identity for a recipe website and iOS app.</p>
                 <a href="almostcooked.html">+ View Project</a>
               </div>
           </div><!--project 5-->
@@ -98,7 +109,7 @@
               </a>
               <div class="portfolio-description">
                 <h3><a href="nativehum.html">Native Hum</a></h3>
-                <p>Soft Sculpture Installation and Promotion for BFA Thesis Show at the Museum of Fine Arts in Tallahassee, Florida.</p>
+                <p>Soft Sculpture Installation and promotional material for BFA Thesis Show at the Museum of Fine Arts in Tallahassee, Florida.</p>
                 <a href="nativehum.html">+ View Project</a>
               </div>
           </div><!--project 8-->
@@ -109,7 +120,7 @@
               </a>
               <div class="portfolio-description">
                 <h3><a href="parasitichome.html">Parasitic Home</a></h3>
-                <p>35mm Photography Series featuring found wasp nests on human bodies.</p>
+                <p>35mm photography series featuring found wasp nests on human bodies.</p>
                 <a href="parasitichome.html">+ View Project</a>
               </div>
           </div><!--project 9-->
@@ -160,64 +171,5 @@
       </ul>
   </footer>
 
-
-    <script type="text/javascript">
-
-    var menu = document.getElementById("header-nav-list"),
-        header = document.getElementsByTagName("header")[0],
-        menuButton = document.getElementById("burger-icon"),
-        menulinks = document.getElementsByClassName('header-nav-link'),
-        backup = document.getElementById('backtotop');
-
-    if(!menuButton.addEventListener){
-        menuButton.attachEvent("onclick", function(e){
-            toggleMenu();    
-            e.preventDefault();
-        });
-    } else {
-        menuButton.addEventListener('click', function(e){
-            toggleMenu();    
-            e.preventDefault();
-        });
-    }
-
-    for(var link = 0; link < menulinks.length; link++){
-        (function(){
-            menulinks[link].addEventListener('click', toggleMenu);
-        })();
-    }
-
-    var scrolling = false;
-    window.addEventListener('scroll', function(e){
-        if(!scrolling){
-            scrolling = true;
-            if(window.scrollY < window.innerHeight){
-                backup.style.opacity = '0';
-                window.setTimeout(function(){
-                    backup.style.visibility = 'hidden';
-                    scrolling = false;
-                }, 1000);
-            } else { 
-                backup.style.opacity = '1';
-                backup.style.visibility = 'visible';
-                scrolling = false;
-            }
-        }
-    })
-
-    backtotop.addEventListener('click', function(e){
-        window.scrollTo(0,0);
-    });
-
-    function toggleMenu(){
-        if(window.innerWidth <= 800){
-            menu.style.height = menu.style.height === '162px' ? '0px' : '162px';
-            header.style.top = header.style.top === '162px' ? '0px' : '162px';
-        }
-    }   
-
-    
-    
-    </script>
   </body>
 </html>
