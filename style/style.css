@@ -205,6 +205,7 @@ header {
 .bio-short {
   padding: 3rem 2rem 2rem;
   text-align: left;
+  max-width: 800px;
 }
 
 /*--------BIO-----------*/
@@ -354,7 +355,7 @@ footer {
 
 @media screen and (max-width: 1024px){  
   .proj-img-top {
-    padding-top:30px;
+    padding-top: 30px;
   }
   .resume {
     padding: 0rem 1rem 2rem;
@@ -363,7 +364,7 @@ footer {
     width: 100%;
   }
   .project-section p,h3{
-    width: 90%;
+    width: 100%;
   }
 }
 
